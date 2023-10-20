@@ -11,7 +11,7 @@ from selenium_stealth import stealth
 
 
 # executable_path="chromedriver-win64/chromedriver.exe"
-service = Service(executable_path="chromedriver")
+service = Service(executable_path="/usr/lib/chromium-browser/chromedriver")
 fake = fake_useragent.UserAgent()
 user = fake.random
 user = str(user) # str : user | str(user)
