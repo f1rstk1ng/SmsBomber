@@ -1,4 +1,4 @@
-print("I'm working !")
+print("I'm working ! 2")
 
 from selenium import webdriver
 from time import sleep as sl
@@ -13,7 +13,7 @@ from selenium_stealth import stealth
 
 
 # executable_path="chromedriver-win64/chromedriver.exe"
-service = Service(executable_path="/home/SmsBomber/chromedriver")
+service = Service(executable_path="/snap/bin/chromium.chromedriver")
 fake = fake_useragent.UserAgent()
 user = fake.random
 user = str(user) # str : user | str(user)
