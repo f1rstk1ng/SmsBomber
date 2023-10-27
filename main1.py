@@ -1,3 +1,5 @@
+print("I'm working !")
+
 from selenium import webdriver
 from time import sleep as sl
 import fake_useragent
@@ -20,6 +22,7 @@ headers = f"user-agent={user}"
 options = Options()
 options.add_argument(headers)
 options.add_argument("--no-snadbox")
+options.add_argument("--disable-dev-shm-usage")
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
