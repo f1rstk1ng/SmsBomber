@@ -1,5 +1,6 @@
-print("I'm working ! 2")
+print("I'm working ! 3")
 
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 from time import sleep as sl
 import fake_useragent
@@ -13,7 +14,7 @@ from selenium_stealth import stealth
 
 
 # executable_path="chromedriver-win64/chromedriver.exe"
-service = Service(executable_path="/snap/bin/chromium.chromedriver")
+service = Service(executable_path="ChromeDriverManager().install()")
 fake = fake_useragent.UserAgent()
 user = fake.random
 user = str(user) # str : user | str(user)
