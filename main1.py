@@ -21,6 +21,8 @@ headers = f"user-agent={user}"
 
 options = Options()
 options.add_argument(headers)
+options.add_argument('--disable-infobars')
+options.add_argument('--remote-debugging-port=9222')
 options.add_argument("--no-snadbox")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument('--disable-blink-features=AutomationControlled')
